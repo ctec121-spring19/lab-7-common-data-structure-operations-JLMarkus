@@ -10,21 +10,27 @@ def main():
     - creation
     '''
     # create an empty dictionary named "dict" and print it
-
+    dict = {}
+    print(dict)
     # open your book to p. 401
     # create the "passwd" dictionary and print it
-
+    passwd = {
+        "turing" : "keyboard",
+        "mousepad" : "Clark pad"
+    }
+    print(passwd)
     '''
     - element access
     '''
     # using the square bracket notation print out the value for "turing"
-
+    print(passwd["turing"])
     '''
     - element updates
     '''
     # using the square bracket notation update the value for "turing" 
     # to "super genius", then print the dictionary
-
+    passwd["turing"] = "super genius"
+    print(passwd)
     '''
     - element insertion
     '''
