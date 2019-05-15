@@ -35,20 +35,24 @@ def main():
     print()
 
     # What errors did you get? Add a comment here with the output:
-
+    ''' gave a "no such file or directory" error '''
     # The default mode for open() is 'r', so the statements above are really
     # the same code. Logically a file must exist in order for us to read it.
 
     # Now write the same code but change the mode to 'a'
     # your code here
-
+    try:
+        infile = open(fileName, 'a')
+    except Exception as error:
+        print(type(error), error)
+    print()
     # close the file
-
+    infile.close()
     # run this program then look in the file explorer window. A new text 
     # file should be shown. Using a text editor, edit the text file to add 
     # some text - a few lines of gibberish. Don't forget to close the file
     # in the text editor.
-
+    
     # Now write the same code but change the mode to 'w'
     # your code here. 
 

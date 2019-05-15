@@ -10,10 +10,12 @@ def main():
     - creation
     '''
     # create an empty list using the variable name "l1" and print it
-
+    l1 = []
+    print(l1, "\n")
     # create a list with 3 elements using the variable name "l2". The elements
     # should be an int, a float and a string. Print l2
-
+    l2 = [2, 3.5, "banana"]
+    print(l2, "\n")
 
     '''
     - element access
@@ -26,10 +28,12 @@ def main():
     # your code should use indexing
     # the line should contain the value of the index as well as the element
     # your code below here
-
+    for i in range(len(l2)):
+        print(l2[i])
+    print()
     # repeat the loop but use l2 itself as the sequence. In this case index
     # values will not be available, so just print the elements
-
+    
     '''
     - element insertion
     '''
