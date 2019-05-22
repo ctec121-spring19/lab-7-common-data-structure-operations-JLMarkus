@@ -55,13 +55,17 @@ def main():
     
     # Now write the same code but change the mode to 'w'
     # your code here. 
-
+    try:
+        infile = open(fileName, 'w')
+    except Exception as error:
+        print(type(error), error)
+    print()
     # close the file
-
+    infile.close()
     # run the program then open the text file in a text editor and view 
     # the contents
     # add a comment here describing the contents:
-
+    ''' the contents have been erased '''
 
     '''
     - element access
@@ -76,27 +80,33 @@ def main():
     # open your book to p. 161 and replicate the code at the center of 
     # the page that opens, reads, and prints the file. Use "infile" again
     # as the file handle
+    def main():
+        fname = input("Enter filename: ")
+        infile = open(fname, "r")
+        data = infile.read()
+        print(data)
 
+    main()
     # compare the program output with what you see in a text editor.
     # are they the same? Add your answer in a comment here:
-
+    ''' they are the same '''
     # add a print statement that prints the length of data
     # this demonstrates that data is one big string.
     # you might try counting the characters to see if the length includes
     # line feeds.
-
+    
     # closing the file - uncomment the line below when you get here
-    #infile.close()
+    infile.close()
 
     # Method 2: readlines()
     # uncomment the code below and run this program
-    '''
+    
     infile = open(fileName)
     data = infile.readlines()
     print(data)
     print()
     infile.close()
-    '''
+    
     # answer the following questions:
     # what type is data?
     # how is it different from the data in Method 1?

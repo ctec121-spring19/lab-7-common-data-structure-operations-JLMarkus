@@ -33,13 +33,15 @@ def main():
     print()
     # repeat the loop but use l2 itself as the sequence. In this case index
     # values will not be available, so just print the elements
-    
+    for l2 in l2:
+        print(l2)
     '''
     - element insertion
     '''
     # mutable sequences like lists have two mechanisms to insert a new value.
     # use append() to add a new element to the end of l2 and print l2
-
+    l2.append("kazoo")
+    print(l2)
     # use insert to add a new element at the beginning of l2 and print l2.
 
     '''
